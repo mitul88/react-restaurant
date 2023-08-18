@@ -9,7 +9,7 @@ const MenuItem = ({dish, onSelectDish}) => {
           src={dish.image}
           style={{
             height: 270,
-            opacity: 0.8
+            opacity: 0.7
           }}
           width="100%"
         />
@@ -18,11 +18,8 @@ const MenuItem = ({dish, onSelectDish}) => {
             {dish.name}
           </CardTitle>
           <CardText>
-            {dish.description}
-          </CardText>
-          <CardText>
-            <small className="text-muted">
-              Last updated 3 mins ago
+            <small style={{fontWeight: "bold", fontSize: "20px", color: "#C70039", backgroundColor: "#fff", padding: "0px 10px", borderRadius: "5px"}}>
+              Price: {dish.price} /-
             </small>
           </CardText>
         </CardImgOverlay>
